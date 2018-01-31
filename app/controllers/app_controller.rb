@@ -9,7 +9,7 @@ class AppController < ApplicationController
     city = params[:city]
     origin = params[:origin]
     destination = params[:destination]
-    content_type :json
+    
     if city && origin && destination
       render json: route_for(origin: origin, destination: destination, city: city)
     else
