@@ -40,7 +40,7 @@ class AppController < ApplicationController
   end
 
   def geocode(address)
-    key = 'AIzaSyA1Cy1OtiZATWJvY4B251DkqmYR42L27TE'
+    key = ENV['MAPS_KEY']
     url = "https://maps.googleapis.com/maps/api/geocode/json?address=#{address}&#{key}"
     response = get_url(url)
     if response.code == '200'
