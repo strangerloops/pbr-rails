@@ -59,7 +59,7 @@ class AppController < ApplicationController
       'chi' => [
                 { address: 'http://54.186.15.176:2345/',   profile_name: 'comfortable' },
                 { address: 'http://54.186.15.176:1234/',   profile_name: 'direct' },
-               ]
+               ],
       'nyc' => [
                 { address: 'http://52.25.196.129:2345/',   profile_name: 'comfortable' },
                 { address: 'http://52.25.196.129:1234/',   profile_name: 'direct' },
